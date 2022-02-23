@@ -7,7 +7,7 @@ plugins {
 
 group = rootProject.group
 version = rootProject.version
-description = "Utils Sub Project"
+description = "Tools Sub Project"
 
 
 configurations.all {
@@ -66,15 +66,11 @@ dependencies {
 
 
 tasks.register("foo") {
-    group = "Projects-Utils1"
-    dependsOn(":tools:foo")
+    group = "Projects-Tools"
     doLast {
-        println("utils foo task is triggered")
+        println("tools foo task is triggered")
         println("utils project's name: " + projects.utils.name)
         println("utils project's group: " + projects.utils.group)
         println("utils project's version: " + projects.utils.version)
-        println("tools project's name: " + projects.tools.name)
-        println("tools project's group: " + projects.tools.group)
-        println("tools project's version: " + projects.tools.version)
     }
 }

@@ -72,7 +72,7 @@ dependencies {
 
 
 tasks.register("bar") {
-    group = "Demo"
+    group = "Projects-Root"
     dependsOn(":utils:foo")
     doLast {
         println("bar task is triggered")

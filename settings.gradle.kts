@@ -3,6 +3,7 @@ rootProject.name = "teamgoal-2022-q1"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 include(
+    "tools",
     "utils"
 )
 
